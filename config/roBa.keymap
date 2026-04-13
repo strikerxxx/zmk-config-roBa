@@ -53,6 +53,21 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        Sup {
+            bindings = <&kp CARET>;
+            key-positions = <8 9>;
+        };
+
+        Sub {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <33 32>;
+        };
+
+        Esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -91,10 +106,10 @@
 
         Symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                            &kp PLUS        &kp BSLH   &kp LPAR  &kp RPAR  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp ASTERISK  &kp MINUS       &kp PIPE   &kp LBRC  &kp RBRC  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &kp SLASH     &kp UNDERSCORE  &kp SLASH  &kp LBKT  &kp RBKT  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans                                         &kp F12
+&trans  &kp AMPERSAND  &trans       &trans     &trans                            &kp PLUS        &kp BSLH   &kp LPAR  &kp RPAR  &kp F5
+&trans  &kp DOLLAR     &kp PERCENT  &kp CARET  &trans  &trans      &kp ASTERISK  &kp MINUS       &kp PIPE   &kp LBRC  &kp RBRC  &kp F10
+&trans  &kp EXCL       &kp AT_SIGN  &kp POUND  &trans  &trans      &kp SLASH     &kp UNDERSCORE  &kp SLASH  &kp LBKT  &kp RBKT  &kp F11
+&trans  &trans         &trans       &trans     &trans  &trans      &trans        &trans                                         &kp F12
             >;
         };
 
